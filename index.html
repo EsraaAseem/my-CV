@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href= "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <title>Resume</title>
+  <style>
+    * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #2196f3;
+  --main-color-alt: #1787e0;
+  --main-transition: 0.3s;
+  --main-padding-top: 100px;
+  --main-padding-bottom: 100px;
+  --section-background: #ececec;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+.contain{
+ max-width: 800px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+a {
+  text-decoration: none;
+}
+.landing {
+  position: relative;
+}
+.landing .container {
+    min-height: calc(100vh - 72px);
+  padding-bottom: 120px;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -40px;
+  width: 100%;
+  height: 100%;
+  background-color: #7ea1ad;
+  z-index: -1;
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+.landing .text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: plum;
+}
+
+.landing .text h1 {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: -2px;
+  color:#095bab;
+}
+.landing .text h1 span{
+    color: #0e85cc;
+}
+@media (max-width: 767px) {
+  .landing .text h1 {
+    font-size: 28px;
+  }
+}
+.landing .text p {
+  font-size: 23px;
+  line-height: 1.7;
+  margin: 5px 0 0;
+  color: #666;
+  max-width: 500px;
+}
+
+.landing .image{
+    padding: 20px 30px 5px;
+}
+.landing .imagesmall{
+    padding: 20px 30px 5px;
+    text-align: center;
+}
+.landing .imagesmall img {
+  position: relative;
+  width:60%;
+  height: 60%;
+  border-radius: 50%;
+  animation: up-and-down 5s linear infinite;
+}
+
+.about, .education{
+    background-color: #c5d5e533;
+    padding: 40px 1px;
+    border-radius: 10px;
+
+}
+.about span{
+  color: #0a437b;
+}
+.about p,.education p{
+    letter-spacing: 1.2;
+   color: #5487ba;
+}
+
+
+
+.my-skills {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: #d2dce62b;
+border-radius: 15px;
+}
+
+.my-skills  .prog-holder {
+  margin-bottom: 40px;
+}
+.my-skills  .prog-holder h4 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #5487ba;
+}
+.my-skills  .prog-holder .prog {
+  background-color: #dedadc;
+  height: 30px;
+}
+.my-skills  .prog-holder .prog span {
+  display: block;
+  background-color:#5487ba ;
+  height: 100%;
+  position: relative;
+}
+
+
+.my-skills  .prog-holder .prog span::before {
+  content: attr(data-progress);
+  position: absolute;
+  color: #5487ba;
+  top: -40px;
+  right: -18px;
+  padding: 4px 0;
+  width: 40px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.certification,.soft{
+    background-color:#0d559b17 ;
+    padding: 20px 10px 30px;
+border-radius: 15px;
+margin-top: 100px;
+}
+.soft p{
+  color: #0a437b;
+}
+.certification .certf img{
+width: 95%;
+height: 95%;
+border-radius: 20px;
+}
+
+.concat .link i{
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+  </style>
+</head>
+<body>
+   <div class="contain">
+    <div class="container mt-2">
+      <div class="landing">
+          <div class="container row">
+              <div class="imagesmall">
+                  <img src="Snapchat-1154089663_4.jpg" alt="" />
+                </div>
+            <div class="text col-md-5">
+              <h1>Welcome, <span>My Name Is Esraa Aseem</span></h1>
+            </div>
+            
+          </div>
+        </div>
+        <div class="container me row mb-3">
+        <div class="about col-lg-7 text-center mb-3 ">
+              <h2 class="text-primary">About Me</h2>
+              <div class="text p-4">
+                  <p>My Name Is Esraa I'm Studing at the  Faculty  of Computers and Artificial Intelligence, and I'm  learning Dot Net Web Development and I finished a  lot  Of Courses To Become Full Stack .Net Engineer And I implement Projects To Develop my skills ,I practice problem-solving to develop my skills, initially on 'CodeForces' and 'Rank Hacker', and now on 'Leetcode'. I solve using 'C#', 'C++ ' , and 'JavaScript' ,Finally
+                    I want to become a cloud DevOps engineer .                    
+                  </p>
+              </div>
+          </div>
+          <div class="education col-lg-5 text-center mb-3" >
+              <h2 class="text-primary">Education</h2>
+              <div class="text p-4">
+                  <p>I started studying at the Faculty of Computers and Artificial Intelligence, Sohag University, in the year 
+                    "<span >2020 </span>", and I am currently in the third Level,
+                    My grade:<span> JPA : 3.12 , 'very good'</span>;
+                    
+                  </p>
+              </div>
+          
+          </div>
+        </div>
+        <div class="my-skills mt-2">
+          <div class="container col-lg-8">
+              <h2 class="text-primary text-center mb-5 mt-5">Skills</h2>
+
+            <div class="prog-holder">
+              <h4>Html &amp; Css</h4>
+              <div class="prog">
+                <span style="width: 90%" data-progress="90%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>TypeScript</h4>
+              <div class="prog">
+                <span style="width: 70%" data-progress="75%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>C#</h4>
+              <div class="prog">
+                <span style="width: 80%" data-progress="80%"></span>
+              </div>
+            </div> 
+            <div class="prog-holder">
+              <h4>Angular</h4>
+              <div class="prog">
+                <span style="width: 65%" data-progress="65%"></span>
+              </div>
+          </div>
+          <div class="prog-holder">
+              <h4>Asb.Net Core</h4>
+              <div class="prog">
+                <span style="width: 65%" data-progress="65%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>C++ </h4>
+              <div class="prog">
+                <span style="width: 50%" data-progress="50%"></span>
+              </div>
+            </div>
+            <div class="prog-holder">
+              <h4>Php</h4>
+              <div class="prog">
+                <span style="width: 40%" data-progress="40%"></span>
+              </div>
+            </div>
+           
+            <div class="prog-holder">
+              <h4>Linux</h4>
+              <div class="prog">
+                <span style="width: 40%" data-progress="40%"></span>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+      <div class="soft  mb-5 text-center ">
+        <h2 class="text-primary text-center mt-t mb-5">My Soft Skills</h2>
+        <div class="container">
+          <p> Working Hard and for long time
+           - The ability to improve and develop oneself
+          - The ability to work long hours Not giving up and patience</p>
+        </div>
+       </div>
+     <div class="certification  mb-5 text-center ">
+      <h2 class="text-primary text-center mt-t mb-5">Certifications</h2>
+      <div class="container row text-center justify-content-center">
+          <div class="certf col-md-6 col-lg-5 mb-3">
+           <img src="Angular-imge-certification.jpg" alt="Not Found">
+          </div>
+          <div class="certf col-md-6 col-lg-5 mb-3">
+              <img src="Asp.NetCore-Certification.jpg" alt="Not Found" >
+          </div>
+      </div>
+     </div>
+     <div class="concat mt-5 mb-5">
+      <h2 class="text-primary text-center mt-t mb-5">Concat & My Pages</h2>
+      <div class="container">
+          <div class="link mb-2">
+              <div class="icone ">
+                  <i class="bi bi-telephone-outbound" style="color: green;"> 01140668348</i>
+              </div>
+              <div class="para col-7 "></div>
+          </div>
+          <div class="link  mb-2">
+            <div class="icone ">
+              <i class="bi bi-geo-alt" style="color:#5487ba"> Sohag/girge/msaud </i>
+                
+            </div>
+            <div class="icone ">
+              <i class="bi bi-envelope" style="color: #0b73b0;">
+                <a href="#"  style="color: #0e85cc;">Esraaaseem68@gmail.com </a>
+              </i>
+          </div>
+          <div class="link  mb-2 mt-2">
+              <div class="icone ">
+                  <i class="bi bi-linkedin" style="color: #0e85cc;">
+                  <a href="https://www.linkedin.com/in/esraa-asem-8b6217250/">My Linkedin Page</a>
+                  </i>
+              </div>
+              <div class="para col-7 "></div>
+          </div>
+          <div class="link  mb-2">
+              <div class="icone ">
+                  <i class="bi bi-github">
+                    <a href="https://github.com/EsraaAseem"  style="color: black;">My Github Link </a>
+                  </i>
+              </div>
+             
+              <div class="para col-7 "></div>
+          </div>
+
+         
+            <div class="para col-7 "></div>
+        </div>
+
+      </div>
+     </div>
+  </div>
+   </div>
+</body>
+</html>
